@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Calender</title>
+    <link rel="shortcut icon" href="assets/" type="image/x-icon" />
+    <link rel="icon" href="assets/" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="dropdownNav">
+                <select id="month-display">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+                <select id="year-display"></select>
+            </div>
+            <div>
+                <button id="back-button">Back</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+        <div>
+            <div id="txt" style="padding-left: 10px"></div>
+        </div>
+        <div id="weekdays">
+            <div>Sunday</div>
+            <div>Mondays</div>
+            <div>Tuesday</div>
+            <div>Wednesday</div>
+            <div>Thursday</div>
+            <div>Friday</div>
+            <div>Saturday</div>
+        </div>
+        <div id="calendar">
+        </div>
+    </div>
+
+     <div id="newEventModal">
+      <h2>New Event</h2>
+
+      <input id="eventTitleInput" placeholder="Event Title" />
+
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <div id="eventText"></div>
+      <input id="updateEventInput" placeholder="Update event" /><br>
+      
+      <button id="addNewEventButton">Add Event</button>
+      <button id="deleteButton">Delete</button>
+      <button id="editButton">Edit</button>
+      <button id="closeButton">Close</button>
+      
+    </div>
+
+    <div id="modalBackDrop"></div>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
